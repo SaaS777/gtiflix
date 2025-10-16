@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('descricao')->nullable();
             $table->string('foto')->nullable();
             $table->date('nascimento')->nullable();
-            $table->foreignId('nacionalidade_id')->constrained()->nullable();
+            $table->foreignId('nacionalidade_id')->nullable()->constrained();
             $table->timestamps();
         });
     }

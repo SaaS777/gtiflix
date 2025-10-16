@@ -48,4 +48,12 @@ Route::get('/diretores', function() {
    Route::get('/filmes', function() {
     $minhaVariavel = Filmes::all();
     dd($minhaVariavel);
-   });     
+   });
+
+   Route::get('/lista-filmes', function() {
+    $filmes = Filmes::all();
+   return view('lista-filmes',
+     compact('filmes'));
+   });
+   
+ 
