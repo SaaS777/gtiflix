@@ -50,10 +50,16 @@ Route::get('/diretores', function() {
     dd($minhaVariavel);
    });
 
-   Route::get('/lista-filmes', function() {
+   Route::get('/', function() {
     $filmes = Filmes::all();
    return view('lista-filmes',
      compact('filmes'));
+   });
+
+   Route::get('/detalhes-filme/{filme}',
+   function(Filmes $filme){
+    return view ('detalhes-filmes', compact('filme'));
+
    });
    
  

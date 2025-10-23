@@ -41,8 +41,8 @@
       </div>
     </div>
 
+    @endforeach
   </div>
-  @endforeach
   <!-- End Grid -->
 </div>
 <!-- End Card Blog -->
