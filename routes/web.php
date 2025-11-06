@@ -6,6 +6,7 @@ use App\Models\Nacionalidade;
 use App\Models\Produtora;
 use App\Models\Diretor;
 use App\Models\Filmes;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -56,10 +57,15 @@ Route::get('/diretores', function() {
      compact('filmes'));
    });
 
-   Route::get('/detalhes-filme/{filme}',
+   Route::get('/detalhes-filmes/{filme}',
    function(Filmes $filme){
     return view ('detalhes-filmes', compact('filme'));
 
-   });
+   })->name('detalhes-filme');
+
+   route::view('/login','login')->name('login');
    
+   route::post('/logar', function (Request $request) {
+    dd($request);
+   })->name('logar');
  
