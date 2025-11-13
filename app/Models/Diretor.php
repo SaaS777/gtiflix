@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Diretor extends Model
 {
-    //
+    protected $table = 'diretores';
 }

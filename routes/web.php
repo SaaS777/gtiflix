@@ -55,7 +55,8 @@ Route::get('/diretores', function() {
     $filmes = Filmes::all();
    return view('lista-filmes',
      compact('filmes'));
-   });
+
+})->name('lista-filme');
 
    Route::get('/detalhes-filmes/{filme}',
    function(Filmes $filme){
@@ -68,4 +69,22 @@ Route::get('/diretores', function() {
    route::post('/logar', function (Request $request) {
     dd($request);
    })->name('logar');
- 
+
+   
+   Route::get('/lista-produtoras', function() {
+    $produtoras = Produtora::all();
+   return view('lista-produtoras',
+     compact('produtoras'));
+    })->name('lista-produtoras');
+
+    Route::get('/detalhes-produtoras/{produtoras}',
+   function(Produtora $produtoras){
+    return view ('detalhes-produtoras', compact('produtoras'));
+
+   })->name('detalhes-produtoras');
+
+   Route::get('/lista-diretores', function() {
+    $diretores = Diretor::all();
+   return view('lista-diretores',
+     compact('diretores'));
+    })->name('lista-diretores');
