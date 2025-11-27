@@ -14,10 +14,10 @@ class AtoresSeeder extends Seeder
     {
         DB::table('atores')->insert(
             [
-            ['nome' => "Wagner Moura", 'descricao' => "Ator foda barsileiro",
+            ['nome' => "Wagner Moura", 'descricao' => "Ator foda brasileiro",
             'nacionalidade_id' => 1],
-            ['nome' => "Megan fox", 'descricao' => "Muito Lembrada",
-            'nacionalidade_id' => 2], 
+            ['nome' => "Megan fox", 'descricao' => "Mais Gata",
+            'nacionalidade_id' => 2],
             ]
         );
     }

@@ -1,6 +1,11 @@
 <x-base-layout>
 
 <!-- Card Blog -->
+<div class=" px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <!-- Title -->
+  <div class=" text-center mb-10">
+    <p class="text-2xl font-bold md:text-4xl md:leading-tight text-red">Produtoras</p>
+  </div>
 <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <!-- Grid -->
   <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-10">

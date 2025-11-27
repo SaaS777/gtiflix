@@ -88,3 +88,21 @@ Route::get('/diretores', function() {
    return view('lista-diretores',
      compact('diretores'));
     })->name('lista-diretores');
+
+    Route::get('/detalhes-diretores/{diretores}',
+   function(Diretor $diretores){
+    return view ('detalhes-diretores', compact('diretores'));
+
+})->name('detalhes-diretores');
+
+Route::get('/lista-atores', function() {
+    $atores = Ator::all();
+   return view('lista-atores',
+     compact('atores'));
+    })->name('lista-atores');
+
+    Route::get('/detalhes-atores/{atores}',
+   function(Ator $atores){
+    return view ('detalhes-atores', compact('atores'));
+
+})->name('detalhes-atores');

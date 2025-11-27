@@ -10,7 +10,7 @@ class DiretorSeeder extends Seeder
     public function run(): void
     {
     DB::table('diretores')->insert(
-        [
+        
     [
         ['nome'=>"Steven Spielberg",
             'descricao'=>"Steven Spielberg nasceu o 18 de dezembro de 1946 em Cincinnati, Ohio, EUA."],
@@ -26,7 +26,7 @@ class DiretorSeeder extends Seeder
         ['nome'=>"Walter Salles",
     'descricao'=>"Walter Salles nasceu o 12 de abril de 1956 em Rio de Janeiro, Rio de Janeiro, Brasil."],
             ]
-        ]
+        
     );
     }
 }
